@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SwiftyCamProject
 //
-//  Created by GIGL iOS on 27/06/2022.
+//  Created by Tes on 27/06/2022.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  CameraManagerViewController.swift
 //  SwiftyCamProject
 //
-//  Created by GIGL iOS on 28/06/2022.
+//  Created by Tes on 28/06/2022.
 //
 
 import UIKit
@@ -11,6 +11,7 @@ import CameraManager
 class CameraManagerViewController: UIViewController {
 
     let cameraManager = CameraManager()
+    var takenImage = UIImage()
     
     let backButton: UIButton = {
       let button = UIButton()
@@ -99,9 +100,10 @@ class CameraManagerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
         setupConstraints()
         cameraManager.addPreviewLayerToView(self.captureView)
+        cameraManager.cameraDevice = .front
     }
     
     private func setupConstraints() {
@@ -158,6 +160,16 @@ class CameraManagerViewController: UIViewController {
     
     @objc func didTapTakePhoto() {
         print("Take Photo")
+        
+        cameraManager.capturePictureWithCompletion({ result in
+            switch result {
+                case .failure:
+                    print("unable to take picture")
+                case .success(let content):
+                    self.takenImage = content.asImage ?? UIImage()
+                print("Here is the taken image ``````\(self.takenImage)")
+            }
+        })
     }
         
     @objc func backButtonPressed() {
