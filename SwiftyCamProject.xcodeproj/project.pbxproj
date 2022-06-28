@@ -14,6 +14,7 @@
 		8231E67E286A501600BAE71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231E67C286A501600BAE71F /* Main.storyboard */; };
 		8231E680286A501800BAE71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8231E67F286A501800BAE71F /* Assets.xcassets */; };
 		8231E683286A501800BAE71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8231E681286A501800BAE71F /* LaunchScreen.storyboard */; };
+		8231E68F286AECDE00BAE71F /* CameraManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231E68E286AECDE00BAE71F /* CameraManagerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8231E67F286A501800BAE71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8231E682286A501800BAE71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8231E684286A501800BAE71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8231E68E286AECDE00BAE71F /* CameraManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManagerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				8231E67F286A501800BAE71F /* Assets.xcassets */,
 				8231E681286A501800BAE71F /* LaunchScreen.storyboard */,
 				8231E684286A501800BAE71F /* Info.plist */,
+				8231E68E286AECDE00BAE71F /* CameraManagerViewController.swift */,
 			);
 			path = SwiftyCamProject;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				4B740B91CC3F10541ACD2147 /* Pods-SwiftyCamProject.debug.xcconfig */,
 				7F6E09F839F39FBA4AEC94DE /* Pods-SwiftyCamProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8231E67B286A501600BAE71F /* ViewController.swift in Sources */,
+				8231E68F286AECDE00BAE71F /* CameraManagerViewController.swift in Sources */,
 				8231E677286A501600BAE71F /* AppDelegate.swift in Sources */,
 				8231E679286A501600BAE71F /* SceneDelegate.swift in Sources */,
 			);

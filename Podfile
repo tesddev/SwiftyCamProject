@@ -7,5 +7,6 @@ target 'SwiftyCamProject' do
 
   # Pods for SwiftyCamProject
   pod "SwiftyCam"
+  pod 'CameraManager'
 
 end
